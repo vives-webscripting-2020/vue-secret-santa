@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 800px;
+    margin: auto;
+    font-size: 200%;
+    background-color: #EEE;
+    color: #666;
+}
+
+h1{
+    color: #AAA;
+    text-align: center;
+}
+
+div.button{
+    text-align: center;
+}
+
+input {
+    font-size: 40px;
+    padding: 10px;
+    border: 1px solid #AAA;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 10px 10px #CCC;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+input::placeholder {
+    color: #BBB;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px #CCC;
+    background-color: #BFB;
+    color: #333;
+}
+
+span.name {
+    color: #393;
+    font-weight: bold;
+}

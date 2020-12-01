@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="bundle.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Lotje trekken</h1>
+        <input 
+            type="text" 
+            v-model="name"
+            placeholder="Add a name to the list"
+            @keyup.enter="addName"
+        />
+        <ul>
+            <li v-for="name in names"> {{ name }}</li>
+        </ul>
+        <hr>
+        <button @click="shuffleNames">Shuffle</button>
+        <ul>
+            <li v-for="pair in shuffledNames">
+                <span class="name">{{ pair.from }}</span>
+                has picked 
+                <span class="name">{{ pair.to}}</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
